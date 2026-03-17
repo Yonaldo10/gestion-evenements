@@ -1,0 +1,166 @@
+/* style_utilisateurs.css */
+
+/* Structure principale */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Titre */
+.admin-container h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Actions admin */
+.admin-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.admin-actions a {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 0.9em;
+}
+
+.admin-actions a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Tableau des utilisateurs */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.admin-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Cellules spécifiques */
+.admin-table td:nth-child(5) { /* Statut */
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.admin-table td:nth-child(5):contains("Admin") {
+    color: #e74c3c;
+}
+
+/* Actions */
+.admin-table td:last-child {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-table td:last-child a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: all 0.2s;
+}
+
+.admin-table td:last-child a:first-child { /* Éditer */
+    background-color: #f39c12;
+    color: white;
+}
+
+.admin-table td:last-child a:first-child:hover {
+    background-color: #d35400;
+}
+
+.admin-table td:last-child a:last-child { /* Supprimer */
+    background-color: #e74c3c;
+    color: white;
+}
+
+.admin-table td:last-child a:last-child:hover {
+    background-color: #c0392b;
+}
+
+/* Statistiques */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    color: #7f8c8d;
+    font-size: 1em;
+}
+
+.stat-card p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .admin-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        margin: 5px 0;
+    }
+}

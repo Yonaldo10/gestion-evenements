@@ -1,0 +1,206 @@
+body {
+    background: radial-gradient(circle, #fafafe, #3a3a3a);
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* ---- HEADER ---- */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 40px auto;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style global pour le corps de la page */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---- HEADER ---- */
+/* Style pour l'en-tête */
+header {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Conteneur pour centrer le contenu de l'en-tête */
+.header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour le titre principal de l'en-tête */
+header h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Style pour la navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Style pour les liens de navigation */
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+/* Effet hover sur les liens de navigation */
+nav a:hover {
+    color: #cce5ff;
+}
+/* ========== MESSAGES ALERTE ========== */
+.alert {
+    padding: 15px 20px;
+    margin: 0 auto 25px auto;
+    border-radius: 8px;
+    font-size: 15px;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-error {
+    background-color: #FFF0F0;
+    color: #D32F2F;
+    border-left: 4px solid #D32F2F;
+}
+
+.alert-success {
+    background-color: #F0FFF4;
+    color: #2E7D32;
+    border-left: 4px solid #2E7D32;
+}
+
+.alert-icon {
+    margin-right: 12px;
+    font-size: 20px;
+    font-style: normal;
+    min-width: 24px; /* Garde l'espace même sans icône */
+    text-align: center;
+}
+
+.close-alert {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.close-alert:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alert a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+/* Pour les écrans moyens (tablettes) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Pour les grands écrans (ordinateurs) */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
